@@ -62,22 +62,22 @@ public class Frame extends JFrame implements ActionListener, KeyListener {
 		labelimg1.setHorizontalAlignment(SwingConstants.TRAILING);
 		
 		//images
-		labelimg1.setIcon(new ImageIcon("C:\\Users\\Admin\\eclipse-workspace\\test\\images\\turtle.gif"));
+		labelimg1.setIcon(new ImageIcon("C:\\Users\\Admin\\eclipse-workspace\\test\\images\\turtle.gif"));//this is local path for the gif, please paste your local path for the image here for it to show image in the result
 		getContentPane().add(labelimg1, BorderLayout.EAST);
 		labelimg1.setVisible(false);
 		labelimg1.setSize(150,150);
 		
-		labelimg2.setIcon(new ImageIcon("C:\\Users\\Admin\\eclipse-workspace\\test\\images"));
+		labelimg2.setIcon(new ImageIcon("C:\\Users\\Admin\\eclipse-workspace\\test\\images"));//this is local path for the gif, please paste your local path for the image here for it to show image in the result
 		getContentPane().add(labelimg2, BorderLayout.EAST);
 		labelimg2.setVisible(false);
 		labelimg2.setSize(150,150);
 		
-		labelimg3.setIcon(new ImageIcon("C:\\Users\\hajee\\Downloads\\t-rex.gif"));
+		labelimg3.setIcon(new ImageIcon("C:\\Users\\hajee\\Downloads\\t-rex.gif"));//this is local path for the gif, please paste your local path for the image here for it to show image in the result
 		getContentPane().add(labelimg3, BorderLayout.EAST);
 		labelimg3.setVisible(false);
 		labelimg3.setSize(150,150);
 		
-		labelimg4.setIcon(new ImageIcon("C:\\Users\\hajee\\Downloads\\cheetah.gif"));
+		labelimg4.setIcon(new ImageIcon("C:\\Users\\hajee\\Downloads\\cheetah.gif"));//this is local path for the gif, please paste your local path for the image here for it to show image in the result
 		getContentPane().add(labelimg4, BorderLayout.EAST);
 		labelimg4.setVisible(false);
 		labelimg4.setSize(150,150);
