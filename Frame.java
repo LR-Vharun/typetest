@@ -30,7 +30,7 @@ public class Frame extends JFrame implements ActionListener, KeyListener {
 	final int SCREEN_HEIGHT;
 	final int DELAY = 10;
 
-	JButton button;
+	static JButton button;
 	Timer timer;
 	JLabel label;
 
@@ -244,6 +244,12 @@ public class Frame extends JFrame implements ActionListener, KeyListener {
 		Passages.add(pas4);
 		Passages.add(pas5);
 		Passages.add(pas6);
+
+		try {
+			button.setText("Give me a new one");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 		Random rand = new Random();
 		int place = (rand.nextInt(6));
