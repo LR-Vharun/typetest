@@ -33,7 +33,10 @@ public class Frame extends JFrame implements ActionListener, KeyListener {
 	static JButton button;
 	Timer timer;
 	JLabel label;
-
+	JLabel labelimg1 = new JLabel();
+	JLabel labelimg2 = new JLabel();
+	JLabel labelimg3 = new JLabel();
+	JLabel labelimg4 = new JLabel();
 
 	public Frame() {
 		setBackground(new Color(129, 226, 237));
@@ -56,7 +59,30 @@ public class Frame extends JFrame implements ActionListener, KeyListener {
 
 		getContentPane().add(button, BorderLayout.SOUTH);
 		this.getContentPane().setBackground(Color.BLACK);
+		//gifs are stored in a source file named images 
+		labelimg1.setHorizontalAlignment(SwingConstants.TRAILING);
+		labelimg1.setIcon(new ImageIcon("images/turtle.gif"));
+		getContentPane().add(labelimg1, BorderLayout.WEST);
+		labelimg1.setVisible(false);
+		labelimg1.setSize(150,150);
 		
+		labelimg2.setHorizontalAlignment(SwingConstants.TRAILING);
+		labelimg2.setIcon(new ImageIcon("images/octupu.gif"));
+		getContentPane().add(labelimg2, BorderLayout.WEST);
+		labelimg2.setVisible(false);
+		labelimg2.setSize(150,150);
+		
+		labelimg3.setHorizontalAlignment(SwingConstants.TRAILING);
+		labelimg3.setIcon(new ImageIcon("images/t-rex.gif"));
+		getContentPane().add(labelimg3, BorderLayout.WEST);
+		labelimg3.setVisible(false);
+		labelimg3.setSize(150,150);
+		
+		labelimg4.setHorizontalAlignment(SwingConstants.TRAILING);
+		labelimg4.setIcon(new ImageIcon("images/cheetah.gif"));
+		getContentPane().add(labelimg4, BorderLayout.WEST);
+		labelimg4.setVisible(false);
+		labelimg4.setSize(150,150);
 		
 		this.addKeyListener(this);
 		this.setFocusable(true);
@@ -119,19 +145,19 @@ public class Frame extends JFrame implements ActionListener, KeyListener {
 		if (ended) {
 			if (WPM <= 40) {
 				message = "You are an Average Typist";
-				
+				labelimg1.setVisible(true); //displays turtle gif
 			}
 			else if (WPM > 40 && WPM <= 60) {
 				message = "You are a Good Typist";
-				
+				labelimg2.setVisible(true); //displays octupus gif
 			}
 			else if (WPM > 60 && WPM <= 100) {
 				message = "You are an Excellent Typist";
-				labelimg3.setVisible(true);
+				labelimg3.setVisible(true); //displays t-rex gif
 			}
 			else {
 				message = "You are an Elite Typist";
-				
+				labelimg4.setVisible(true); //displays cheetah gif
 			}
 			FontMetrics metrics = getFontMetrics(g.getFont());
 			int lineHeight = g.getFontMetrics().getHeight();
@@ -215,6 +241,11 @@ public class Frame extends JFrame implements ActionListener, KeyListener {
 			timer.start();
 			running = true;
 			ended = false;
+
+			labelimg1.setVisible(false);
+			labelimg2.setVisible(false);
+			labelimg3.setVisible(false);
+			labelimg4.setVisible(false);
 
 			typedPass = "";
 			message = "";
