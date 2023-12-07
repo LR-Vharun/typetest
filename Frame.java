@@ -33,10 +33,7 @@ public class Frame extends JFrame implements ActionListener, KeyListener {
 	JButton button;
 	Timer timer;
 	JLabel label;
-	JLabel labelimg1 = new JLabel();
-	JLabel labelimg2 = new JLabel();
-	JLabel labelimg3 = new JLabel();
-	JLabel labelimg4 = new JLabel();
+
 
 	public Frame() {
 		setBackground(new Color(129, 226, 237));
@@ -59,28 +56,7 @@ public class Frame extends JFrame implements ActionListener, KeyListener {
 
 		getContentPane().add(button, BorderLayout.SOUTH);
 		this.getContentPane().setBackground(Color.BLACK);
-		labelimg1.setHorizontalAlignment(SwingConstants.TRAILING);
 		
-		//images
-		labelimg1.setIcon(new ImageIcon("C:\\Users\\Admin\\eclipse-workspace\\test\\images\\turtle.gif"));//this is local path for the gif, please paste your local path for the image here for it to show image in the result
-		getContentPane().add(labelimg1, BorderLayout.EAST);
-		labelimg1.setVisible(false);
-		labelimg1.setSize(150,150);
-		
-		labelimg2.setIcon(new ImageIcon("C:\\Users\\Admin\\eclipse-workspace\\test\\images"));//this is local path for the gif, please paste your local path for the image here for it to show image in the result
-		getContentPane().add(labelimg2, BorderLayout.EAST);
-		labelimg2.setVisible(false);
-		labelimg2.setSize(150,150);
-		
-		labelimg3.setIcon(new ImageIcon("C:\\Users\\hajee\\Downloads\\t-rex.gif"));//this is local path for the gif, please paste your local path for the image here for it to show image in the result
-		getContentPane().add(labelimg3, BorderLayout.EAST);
-		labelimg3.setVisible(false);
-		labelimg3.setSize(150,150);
-		
-		labelimg4.setIcon(new ImageIcon("C:\\Users\\hajee\\Downloads\\cheetah.gif"));//this is local path for the gif, please paste your local path for the image here for it to show image in the result
-		getContentPane().add(labelimg4, BorderLayout.EAST);
-		labelimg4.setVisible(false);
-		labelimg4.setSize(150,150);
 		
 		this.addKeyListener(this);
 		this.setFocusable(true);
@@ -143,11 +119,11 @@ public class Frame extends JFrame implements ActionListener, KeyListener {
 		if (ended) {
 			if (WPM <= 40) {
 				message = "You are an Average Typist";
-				labelimg1.setVisible(true);
+				
 			}
 			else if (WPM > 40 && WPM <= 60) {
 				message = "You are a Good Typist";
-				labelimg2.setVisible(true);
+				
 			}
 			else if (WPM > 60 && WPM <= 100) {
 				message = "You are an Excellent Typist";
@@ -155,7 +131,7 @@ public class Frame extends JFrame implements ActionListener, KeyListener {
 			}
 			else {
 				message = "You are an Elite Typist";
-				labelimg4.setVisible(true);
+				
 			}
 			FontMetrics metrics = getFontMetrics(g.getFont());
 			int lineHeight = g.getFontMetrics().getHeight();
