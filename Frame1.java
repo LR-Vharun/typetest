@@ -10,7 +10,7 @@ public class Frame1 {
 
         JFrame frame = new JFrame("Instructions");
 
-        frame.setSize(600, 300);
+        frame.setSize(600, 206);
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(0, 1));
         Font font = new Font("Arial", Font.BOLD, 20);
