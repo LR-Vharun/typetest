@@ -36,7 +36,7 @@ Animated gifs visually represent the user's typing proficiency:
 
 **Initiate Typing Test:**
 
-Click the "Let's Start typing!" button to commence the typing test.
+Click the _"Let's Start typing!"_ button to commence the typing test.
 
 **Type the Passage:**
 
@@ -48,4 +48,4 @@ Receive immediate feedback on WPM, CPM, CPW, and accuracy.
 
 **Restart Test:**
 
-Click "Try Again" to reset the test with a new randomly selected passage.
+Click _"Try Again" _to reset the test with a new randomly selected passage.
