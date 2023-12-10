@@ -1,8 +1,8 @@
-# Typing Speed Calculator
+# **Typing Speed Calculator**
 
 _**Overview**_
 
-This is a simple Typing Speed Calculator written in Java. The program allows users to test their typing speed by entering a given text and measuring the time taken to complete it. The calculated words per minute (WPM) provide an indication of the user's typing proficiency.
+This is a simple Typing Speed Calculator written in Java. The program allows users to test their typing speed by entering a given text and measuring the time taken to complete it. The calculated words per minute (WPM) and characters per minute (CPM) provide an indication of the user's typing proficiency.
 
 _**Features**_
 
