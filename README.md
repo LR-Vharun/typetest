@@ -12,13 +12,13 @@ This Java application serves as a sophisticated Typing Speed Calculator, designe
 
 **Real-time Performance Metrics:**
 
-    **_Words Per Minute (WPM):_** Measures the user's typing speed in words per minute.
+   **_Words Per Minute (WPM):_** Measures the user's typing speed in words per minute.
      
-    **_Characters Per Minute (CPM):_** Quantifies the typing speed in characters per minute.
+   **_Characters Per Minute (CPM):_** Quantifies the typing speed in characters per minute.
    
-    **_Characters Per Word (CPW):_** Provides insights into the average length of typed words.
+   **_Characters Per Word (CPW):_** Provides insights into the average length of typed words.
     
-    **_Accuracy:_** Calculates the accuracy of typed characters compared to the provided passage.
+   **_Accuracy:_** Calculates the accuracy of typed characters compared to the provided passage.
       
 **Visual Feedback:**
 
