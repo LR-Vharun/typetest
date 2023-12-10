@@ -48,4 +48,4 @@ Receive immediate feedback on WPM, CPM, CPW, and accuracy.
 
 **Restart Test:**
 
-Click _"Try Again" _to reset the test with a new randomly selected passage.
+Click _"Try Again"_ to reset the test with a new randomly selected passage.
